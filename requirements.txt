@@ -1,0 +1,6 @@
+# Required for the TritonAI/OpenAI-compatible generator path.
+openai
+
+# Optional packages for the class-required RapidFire AI experimentation workflow.
+# Install these on DataHub before running scripts/run_rapidfire_experiments.py:
+#   pip install rapidfireai datasets langchain langchain-community langchain-text-splitters langchain-huggingface sentence-transformers faiss-cpu

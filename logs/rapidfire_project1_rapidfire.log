@@ -1,0 +1,797 @@
+2026-05-03 23:25:45 | Experiment | INFO | experiment.py:165 | [project1-rapidfire-rag-contexteng:Experiment] Experiment project1-rapidfire-rag-contexteng created with Experiment ID: 4 at /home/yul386/Project1 3/project1_solution/experiments/rapidfire_project1/project1-rapidfire-rag-contexteng
+2026-05-03 23:26:03 | Experiment | INFO | metric_rfmetric_manager.py:55 | [project1-rapidfire-rag-contexteng:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-03 23:26:03 | Experiment | INFO | metric_rfmetric_manager.py:119 | [project1-rapidfire-rag-contexteng:Experiment] Creating MLflow experiment: project1-rapidfire-rag-contexteng
+2026-05-03 23:26:03 | Experiment | INFO | experiment.py:210 | [project1-rapidfire-rag-contexteng:Experiment] Initialized MetricLogger experiment: 5
+2026-05-03 23:26:03 | Experiment | INFO | experiment.py:226 | [project1-rapidfire-rag-contexteng:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-03 23:26:03 | Experiment | WARNING | experiment.py:381 | [project1-rapidfire-rag-contexteng:Experiment] No GPUs available. Be sure to use external APIs for inference.
+2026-05-03 23:26:03 | Experiment | INFO | experiment.py:383 | [project1-rapidfire-rag-contexteng:Experiment] Running multi-config experiment with 8 shard(s), (0.0 GPUs per actor, 8.0 CPUs per actor, 6 actors)
+2026-05-03 23:26:03 | Experiment | INFO | experiment.py:392 | [project1-rapidfire-rag-contexteng:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2026-05-03 23:26:04 | Controller | INFO | controller.py:895 | [project1-rapidfire-rag-contexteng:Controller] Dataset sharded into 8 shard(s). Shard sizes: [3, 3, 3, 3, 3, 3, 3, 3]
+2026-05-03 23:26:04 | Controller | INFO | controller.py:900 | [project1-rapidfire-rag-contexteng:Controller] Received 8 pipeline configuration(s)
+2026-05-03 23:26:04 | Controller | INFO | controller.py:309 | [project1-rapidfire-rag-contexteng:Controller] Found 6 unique RAG context(s)
+2026-05-03 23:26:04 | Controller | INFO | controller.py:320 | [project1-rapidfire-rag-contexteng:Controller] Will build new context 87b5c076...
+2026-05-03 23:26:04 | Controller | INFO | controller.py:320 | [project1-rapidfire-rag-contexteng:Controller] Will build new context 595c8433...
+2026-05-03 23:26:04 | Controller | INFO | controller.py:320 | [project1-rapidfire-rag-contexteng:Controller] Will build new context 6245a226...
+2026-05-03 23:26:04 | Controller | INFO | controller.py:320 | [project1-rapidfire-rag-contexteng:Controller] Will build new context 9f4dae53...
+2026-05-03 23:26:04 | Controller | INFO | controller.py:320 | [project1-rapidfire-rag-contexteng:Controller] Will build new context e3311036...
+2026-05-03 23:26:04 | Controller | INFO | controller.py:320 | [project1-rapidfire-rag-contexteng:Controller] Will build new context 9390b6a4...
+2026-05-03 23:26:04 | Controller | INFO | controller.py:346 | [project1-rapidfire-rag-contexteng:Controller] Building 6 context(s) in parallel...
+2026-05-03 23:26:04 | Controller | INFO | controller.py:373 | [project1-rapidfire-rag-contexteng:Controller] Creating 6 DocProcessingActor(s) for parallel processing
+2026-05-03 23:26:05 | matplotlib.font_manager | INFO | font_manager.py:1639 | generated new fontManager
+2026-05-03 23:26:05 | Controller | INFO | controller.py:461 | [project1-rapidfire-rag-contexteng:Controller] Submitted 6 build task(s) in parallel
+2026-05-03 23:26:26 | DocProcessingActor | INFO | doc_actor.py:59 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor initialized
+2026-05-03 23:26:26 | DocProcessingActor | INFO | doc_actor.py:59 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor initialized
+2026-05-03 23:26:26 | DocProcessingActor | INFO | doc_actor.py:59 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor initialized
+2026-05-03 23:26:26 | DocProcessingActor | INFO | doc_actor.py:59 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor initialized
+2026-05-03 23:26:27 | DocProcessingActor | INFO | doc_actor.py:96 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2026-05-03 23:26:27 | DocProcessingActor | INFO | doc_actor.py:107 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Building document index...
+2026-05-03 23:26:27 | DocProcessingActor | INFO | doc_actor.py:96 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2026-05-03 23:26:27 | DocProcessingActor | INFO | doc_actor.py:107 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Building document index...
+2026-05-03 23:26:27 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:26:27 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:26:27 | DocProcessingActor | INFO | doc_actor.py:96 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2026-05-03 23:26:27 | DocProcessingActor | INFO | doc_actor.py:107 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Building document index...
+2026-05-03 23:26:27 | DocProcessingActor | INFO | doc_actor.py:96 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2026-05-03 23:26:27 | DocProcessingActor | INFO | doc_actor.py:107 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Building document index...
+2026-05-03 23:26:27 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:26:28 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:26:31 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:26:48 | DocProcessingActor | INFO | doc_actor.py:109 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Document index built successfully
+2026-05-03 23:26:48 | DocProcessingActor | INFO | doc_actor.py:134 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2026-05-03 23:26:48 | DocProcessingActor | INFO | doc_actor.py:144 | [project1-rapidfire-rag-contexteng:DocProcessingActor] FAISS index serialized: 1794524 bytes
+2026-05-03 23:26:48 | DocProcessingActor | INFO | doc_actor.py:189 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2026-05-03 23:26:48 | Controller | INFO | controller.py:482 | [project1-rapidfire-rag-contexteng:Controller] Built context 1 (87b5c076...) successfully in 44.54s
+2026-05-03 23:26:52 | DocProcessingActor | INFO | doc_actor.py:109 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Document index built successfully
+2026-05-03 23:26:52 | DocProcessingActor | INFO | doc_actor.py:134 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2026-05-03 23:26:52 | DocProcessingActor | INFO | doc_actor.py:144 | [project1-rapidfire-rag-contexteng:DocProcessingActor] FAISS index serialized: 838256 bytes
+2026-05-03 23:26:52 | DocProcessingActor | INFO | doc_actor.py:189 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2026-05-03 23:26:52 | Controller | INFO | controller.py:482 | [project1-rapidfire-rag-contexteng:Controller] Built context 2 (595c8433...) successfully in 47.74s
+2026-05-03 23:27:03 | DocProcessingActor | INFO | doc_actor.py:109 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Document index built successfully
+2026-05-03 23:27:03 | DocProcessingActor | INFO | doc_actor.py:134 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2026-05-03 23:27:03 | DocProcessingActor | INFO | doc_actor.py:144 | [project1-rapidfire-rag-contexteng:DocProcessingActor] FAISS index serialized: 1794524 bytes
+2026-05-03 23:27:03 | DocProcessingActor | INFO | doc_actor.py:189 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2026-05-03 23:27:03 | Controller | INFO | controller.py:482 | [project1-rapidfire-rag-contexteng:Controller] Built context 3 (6245a226...) successfully in 58.95s
+2026-05-03 23:27:04 | DocProcessingActor | INFO | doc_actor.py:109 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Document index built successfully
+2026-05-03 23:27:04 | DocProcessingActor | INFO | doc_actor.py:134 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2026-05-03 23:27:04 | DocProcessingActor | INFO | doc_actor.py:144 | [project1-rapidfire-rag-contexteng:DocProcessingActor] FAISS index serialized: 1140640 bytes
+2026-05-03 23:27:04 | DocProcessingActor | INFO | doc_actor.py:189 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2026-05-03 23:27:04 | Controller | INFO | controller.py:482 | [project1-rapidfire-rag-contexteng:Controller] Built context 4 (9f4dae53...) successfully in 60.18s
+2026-05-03 23:27:09 | DocProcessingActor | INFO | doc_actor.py:59 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor initialized
+2026-05-03 23:27:10 | DocProcessingActor | INFO | doc_actor.py:96 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2026-05-03 23:27:10 | DocProcessingActor | INFO | doc_actor.py:107 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Building document index...
+2026-05-03 23:27:10 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:27:12 | DocProcessingActor | INFO | doc_actor.py:59 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor initialized
+2026-05-03 23:27:12 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:27:13 | DocProcessingActor | INFO | doc_actor.py:96 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2026-05-03 23:27:13 | DocProcessingActor | INFO | doc_actor.py:107 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Building document index...
+2026-05-03 23:27:13 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:27:15 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:27:43 | DocProcessingActor | INFO | doc_actor.py:109 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Document index built successfully
+2026-05-03 23:27:43 | DocProcessingActor | INFO | doc_actor.py:134 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2026-05-03 23:27:43 | DocProcessingActor | INFO | doc_actor.py:144 | [project1-rapidfire-rag-contexteng:DocProcessingActor] FAISS index serialized: 838256 bytes
+2026-05-03 23:27:43 | DocProcessingActor | INFO | doc_actor.py:189 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2026-05-03 23:27:43 | Controller | INFO | controller.py:482 | [project1-rapidfire-rag-contexteng:Controller] Built context 5 (e3311036...) successfully in 99.04s
+2026-05-03 23:27:47 | DocProcessingActor | INFO | doc_actor.py:109 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Document index built successfully
+2026-05-03 23:27:47 | DocProcessingActor | INFO | doc_actor.py:134 | [project1-rapidfire-rag-contexteng:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2026-05-03 23:27:47 | DocProcessingActor | INFO | doc_actor.py:144 | [project1-rapidfire-rag-contexteng:DocProcessingActor] FAISS index serialized: 866876 bytes
+2026-05-03 23:27:47 | DocProcessingActor | INFO | doc_actor.py:189 | [project1-rapidfire-rag-contexteng:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2026-05-03 23:27:47 | Controller | INFO | controller.py:482 | [project1-rapidfire-rag-contexteng:Controller] Built context 6 (9390b6a4...) successfully in 103.28s
+2026-05-03 23:27:47 | Controller | INFO | controller.py:523 | [project1-rapidfire-rag-contexteng:Controller] Completed parallel context building for 6 context(s)
+2026-05-03 23:27:47 | Controller | INFO | controller.py:920 | [project1-rapidfire-rag-contexteng:Controller] Created 6 query processing actors (generic pool)
+2026-05-03 23:27:47 | Experiment | INFO | metric_rfmetric_manager.py:141 | [project1-rapidfire-rag-contexteng:Experiment] Created MLflow run: 49bccd6d68d442a18dbff76fc48e58c7, 1
+2026-05-03 23:27:47 | Experiment | INFO | metric_rfmetric_manager.py:141 | [project1-rapidfire-rag-contexteng:Experiment] Created MLflow run: 47ed969f97704db2875537ca0f2a54db, 2
+2026-05-03 23:27:47 | Experiment | INFO | metric_rfmetric_manager.py:141 | [project1-rapidfire-rag-contexteng:Experiment] Created MLflow run: bc2bc7173ec94402b8236b841d40fa73, 3
+2026-05-03 23:27:47 | Experiment | INFO | metric_rfmetric_manager.py:141 | [project1-rapidfire-rag-contexteng:Experiment] Created MLflow run: 9f9b101d24bb477da824b0009427a7eb, 4
+2026-05-03 23:27:48 | Experiment | INFO | metric_rfmetric_manager.py:141 | [project1-rapidfire-rag-contexteng:Experiment] Created MLflow run: e54d51eb842c4bd6bb8bc5e46a944ce1, 5
+2026-05-03 23:27:48 | Experiment | INFO | metric_rfmetric_manager.py:141 | [project1-rapidfire-rag-contexteng:Experiment] Created MLflow run: fdd0e81cb1fe4e2582cf34fefac1b4ae, 6
+2026-05-03 23:27:48 | Experiment | INFO | metric_rfmetric_manager.py:141 | [project1-rapidfire-rag-contexteng:Experiment] Created MLflow run: a55655434e0244668553798d768800b7, 7
+2026-05-03 23:27:48 | Experiment | INFO | metric_rfmetric_manager.py:141 | [project1-rapidfire-rag-contexteng:Experiment] Created MLflow run: 87359ab3818e42f1a8fded2b98ec7669, 8
+2026-05-03 23:27:48 | Controller | INFO | controller.py:931 | [project1-rapidfire-rag-contexteng:Controller] Initialized scheduler with 8 pipelines, 6 actors, 8 shards
+2026-05-03 23:27:48 | Controller | INFO | controller.py:1118 | [project1-rapidfire-rag-contexteng:Controller] Created experiment-wide rate limiter actor for 8 OpenAI pipeline(s) with per-model limits (api-llama-4-scout: 80 RPM, 500000 TPM)
+2026-05-03 23:27:48 | Controller | INFO | controller.py:1124 | [project1-rapidfire-rag-contexteng:Controller] Starting multi-pipeline inference scheduling...
+2026-05-03 23:27:48 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 0 (1 batches)
+2026-05-03 23:28:10 | QueryProcessingActor-0 | INFO | query_actor.py:165 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Initializing new inference engine (config hash: 9924b857)
+2026-05-03 23:28:10 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:12 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:12 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:12 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:28:12 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:28:12 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-03 23:28:12 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:12 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 1 for shard 0 (1 batches)
+2026-05-03 23:28:12 | QueryProcessingActor-1 | INFO | query_actor.py:165 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Initializing new inference engine (config hash: 9924b857)
+2026-05-03 23:28:12 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:14 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:14 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:14 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:28:14 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:28:14 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=mmr
+2026-05-03 23:28:14 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:14 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed shard 0 (1 batches, 2.24s)
+2026-05-03 23:28:14 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 0 (1 batches)
+2026-05-03 23:28:14 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:14 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:16 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:16 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:16 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:28:16 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:28:16 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-03 23:28:16 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:28:17 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:18 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed shard 0 (1 batches, 3.35s)
+2026-05-03 23:28:18 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 1 for shard 0 (1 batches)
+2026-05-03 23:28:18 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:18 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:20 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:20 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:20 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:28:20 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:28:20 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=mmr
+2026-05-03 23:28:20 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:28:21 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:21 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 2 for shard 0 (1 batches)
+2026-05-03 23:28:21 | QueryProcessingActor-2 | INFO | query_actor.py:165 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Initializing new inference engine (config hash: 9924b857)
+2026-05-03 23:28:21 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:28:23 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:23 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:23 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:28:23 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:28:23 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=similarity
+2026-05-03 23:28:23 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:23 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed shard 0 (1 batches, 5.67s)
+2026-05-03 23:28:23 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 0 (1 batches)
+2026-05-03 23:28:23 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:24 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:28:25 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:25 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:25 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:28:25 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:28:25 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:28:25 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:25 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 3 for shard 0 (1 batches)
+2026-05-03 23:28:25 | QueryProcessingActor-3 | INFO | query_actor.py:165 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Initializing new inference engine (config hash: 9924b857)
+2026-05-03 23:28:26 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:28:27 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:27 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:27 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:28:27 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:28:27 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:28:28 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:28:29 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:29 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed shard 0 (1 batches, 7.75s)
+2026-05-03 23:28:29 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed shard 0 (1 batches, 5.77s)
+2026-05-03 23:28:29 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed shard 0 (1 batches, 3.65s)
+2026-05-03 23:28:29 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 0 (1 batches)
+2026-05-03 23:28:29 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:29 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:28:31 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:31 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:31 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:28:31 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:28:31 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:28:31 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:28:33 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:33 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 1 for shard 1 (1 batches)
+2026-05-03 23:28:33 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:33 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:35 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:35 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:35 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:28:35 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:28:35 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:28:35 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:35 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed shard 0 (1 batches, 5.74s)
+2026-05-03 23:28:35 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 2 for shard 1 (1 batches)
+2026-05-03 23:28:35 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:35 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:37 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:37 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:37 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:28:37 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:28:37 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:28:37 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:37 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed shard 0 (1 batches, 3.92s)
+2026-05-03 23:28:37 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 1 (1 batches)
+2026-05-03 23:28:37 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:37 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:39 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:39 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:39 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:28:39 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:28:39 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-03 23:28:39 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:28:40 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:40 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed shard 1 (1 batches, 5.39s)
+2026-05-03 23:28:40 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 1 for shard 1 (1 batches)
+2026-05-03 23:28:40 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:40 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:42 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:42 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:42 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:28:42 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:28:42 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=mmr
+2026-05-03 23:28:42 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:28:43 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:44 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed shard 1 (1 batches, 6.93s)
+2026-05-03 23:28:44 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 2 for shard 1 (1 batches)
+2026-05-03 23:28:44 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:44 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:28:45 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:45 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:45 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:28:45 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:28:45 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=similarity
+2026-05-03 23:28:45 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:46 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed shard 1 (1 batches, 5.53s)
+2026-05-03 23:28:46 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 1 (1 batches)
+2026-05-03 23:28:46 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:46 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:28:48 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:48 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:48 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:28:48 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:28:48 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:28:48 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:48 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 3 for shard 1 (1 batches)
+2026-05-03 23:28:48 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:48 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:28:50 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:50 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:50 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:28:50 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:28:50 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:28:50 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:28:51 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:51 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed shard 1 (1 batches, 7.69s)
+2026-05-03 23:28:51 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed shard 1 (1 batches, 5.88s)
+2026-05-03 23:28:52 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed shard 1 (1 batches, 3.75s)
+2026-05-03 23:28:52 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 1 (1 batches)
+2026-05-03 23:28:52 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:52 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:28:53 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:53 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:53 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:28:53 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:28:53 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:28:53 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:28:55 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:55 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 1 for shard 2 (1 batches)
+2026-05-03 23:28:55 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:55 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:57 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:57 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:57 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:28:57 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:28:57 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:28:57 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:57 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed shard 1 (1 batches, 5.45s)
+2026-05-03 23:28:57 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 2 for shard 2 (1 batches)
+2026-05-03 23:28:57 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:57 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:28:59 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:28:59 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:28:59 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:28:59 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:28:59 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:28:59 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:28:59 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed shard 1 (1 batches, 4.00s)
+2026-05-03 23:28:59 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 2 (1 batches)
+2026-05-03 23:28:59 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:28:59 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:01 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:01 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:01 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:29:01 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:29:01 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-03 23:29:01 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:02 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:02 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed shard 2 (1 batches, 5.61s)
+2026-05-03 23:29:02 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed shard 2 (1 batches, 3.61s)
+2026-05-03 23:29:02 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 1 for shard 2 (1 batches)
+2026-05-03 23:29:02 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:03 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:04 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:04 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:04 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:29:04 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:29:04 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=mmr
+2026-05-03 23:29:04 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:06 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:06 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed shard 2 (1 batches, 3.55s)
+2026-05-03 23:29:06 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 2 (1 batches)
+2026-05-03 23:29:06 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:06 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:08 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:08 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:08 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:29:08 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:29:08 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-03 23:29:08 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:08 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 2 for shard 2 (1 batches)
+2026-05-03 23:29:08 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:08 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:10 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:10 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:10 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:29:10 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:29:10 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:29:10 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:10 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 3 for shard 2 (1 batches)
+2026-05-03 23:29:10 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:10 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:12 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:12 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:12 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:29:12 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:29:12 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:29:12 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:13 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:13 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed shard 2 (1 batches, 7.42s)
+2026-05-03 23:29:14 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed shard 2 (1 batches, 5.42s)
+2026-05-03 23:29:14 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed shard 2 (1 batches, 3.76s)
+2026-05-03 23:29:14 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 2 (1 batches)
+2026-05-03 23:29:14 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:14 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:16 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:16 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:16 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:29:16 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:29:16 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:29:16 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:17 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:17 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 1 for shard 3 (1 batches)
+2026-05-03 23:29:17 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:17 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:19 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:19 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:19 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:29:19 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:29:19 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:29:19 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:19 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed shard 2 (1 batches, 5.95s)
+2026-05-03 23:29:19 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 2 for shard 3 (1 batches)
+2026-05-03 23:29:19 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:19 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:21 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:21 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:21 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:29:21 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:29:21 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:29:21 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:21 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 3 for shard 3 (1 batches)
+2026-05-03 23:29:21 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:21 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:23 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:23 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:23 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:29:23 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:29:23 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:29:23 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:24 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:25 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed shard 2 (1 batches, 7.28s)
+2026-05-03 23:29:25 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed shard 3 (1 batches, 5.48s)
+2026-05-03 23:29:25 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed shard 3 (1 batches, 3.54s)
+2026-05-03 23:29:25 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 3 (1 batches)
+2026-05-03 23:29:25 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:25 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:27 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:27 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:27 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:29:27 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:29:27 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:29:27 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:28 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:28 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed shard 3 (1 batches, 3.81s)
+2026-05-03 23:29:28 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 1 for shard 3 (1 batches)
+2026-05-03 23:29:28 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:29 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:30 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:30 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:30 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:29:30 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:29:30 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:29:30 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:30 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 2 for shard 3 (1 batches)
+2026-05-03 23:29:30 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:31 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:32 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:32 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:32 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:29:32 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:29:32 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:29:32 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:32 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 3 for shard 3 (1 batches)
+2026-05-03 23:29:32 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:33 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:34 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:34 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:34 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:29:34 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:29:34 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:29:34 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:36 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:36 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed shard 3 (1 batches, 7.56s)
+2026-05-03 23:29:36 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed shard 3 (1 batches, 5.49s)
+2026-05-03 23:29:36 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed shard 3 (1 batches, 3.68s)
+2026-05-03 23:29:36 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 3 (1 batches)
+2026-05-03 23:29:36 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:36 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:38 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:38 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:38 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:29:38 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:29:38 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:29:38 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:39 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:39 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 1 for shard 4 (1 batches)
+2026-05-03 23:29:39 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:40 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:41 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:41 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:41 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:29:41 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:29:41 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:29:41 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:42 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed shard 3 (1 batches, 5.56s)
+2026-05-03 23:29:42 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 2 for shard 4 (1 batches)
+2026-05-03 23:29:42 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:42 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:43 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:43 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:43 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:29:43 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:29:43 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:29:43 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:43 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 3 for shard 4 (1 batches)
+2026-05-03 23:29:43 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:44 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:45 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:45 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:45 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:29:45 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:29:45 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:29:45 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:47 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:47 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed shard 3 (1 batches, 7.27s)
+2026-05-03 23:29:47 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed shard 4 (1 batches, 5.55s)
+2026-05-03 23:29:47 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed shard 4 (1 batches, 3.57s)
+2026-05-03 23:29:47 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 4 (1 batches)
+2026-05-03 23:29:47 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:47 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:29:49 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:49 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:49 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:29:49 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:29:49 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:29:49 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:50 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:51 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed shard 4 (1 batches, 3.83s)
+2026-05-03 23:29:51 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 1 for shard 4 (1 batches)
+2026-05-03 23:29:51 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:51 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:53 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:53 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:53 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:29:53 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:29:53 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:29:53 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:53 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 2 for shard 4 (1 batches)
+2026-05-03 23:29:53 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:53 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:55 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:55 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:55 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:29:55 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:29:55 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:29:55 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:55 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 3 for shard 4 (1 batches)
+2026-05-03 23:29:55 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:55 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:29:57 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:29:57 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:29:57 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:29:57 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:29:57 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:29:57 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:29:58 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:29:58 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed shard 4 (1 batches, 7.72s)
+2026-05-03 23:29:58 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed shard 4 (1 batches, 5.74s)
+2026-05-03 23:29:59 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed shard 4 (1 batches, 3.69s)
+2026-05-03 23:29:59 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 4 (1 batches)
+2026-05-03 23:29:59 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:29:59 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:01 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:01 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:01 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:30:01 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:30:01 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:30:01 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:02 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:02 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 1 for shard 5 (1 batches)
+2026-05-03 23:30:02 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:02 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:04 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:04 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:04 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:30:04 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:30:04 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:30:04 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:04 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed shard 4 (1 batches, 5.98s)
+2026-05-03 23:30:04 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 2 for shard 5 (1 batches)
+2026-05-03 23:30:04 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:05 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:06 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:06 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:06 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:30:06 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:30:06 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:30:06 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:06 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 3 for shard 5 (1 batches)
+2026-05-03 23:30:06 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:06 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:08 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:08 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:08 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:30:09 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:30:09 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:30:09 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:10 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:10 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed shard 4 (1 batches, 7.91s)
+2026-05-03 23:30:10 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed shard 5 (1 batches, 5.98s)
+2026-05-03 23:30:10 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed shard 5 (1 batches, 4.01s)
+2026-05-03 23:30:10 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 5 (1 batches)
+2026-05-03 23:30:10 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:11 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:12 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:12 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:12 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:30:12 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:30:12 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:30:12 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:14 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:14 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed shard 5 (1 batches, 3.83s)
+2026-05-03 23:30:14 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 1 for shard 5 (1 batches)
+2026-05-03 23:30:14 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:14 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:16 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:16 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:16 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:30:16 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:30:16 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:30:16 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:16 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 2 for shard 5 (1 batches)
+2026-05-03 23:30:16 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:16 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:18 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:18 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:18 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:30:18 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:30:18 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:30:18 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:18 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 3 for shard 5 (1 batches)
+2026-05-03 23:30:18 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:18 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:20 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:20 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:20 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:30:20 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:30:20 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:30:20 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:22 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:22 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed shard 5 (1 batches, 7.87s)
+2026-05-03 23:30:22 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed shard 5 (1 batches, 5.80s)
+2026-05-03 23:30:22 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed shard 5 (1 batches, 3.98s)
+2026-05-03 23:30:22 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 5 (1 batches)
+2026-05-03 23:30:22 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:22 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:24 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:24 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:24 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:30:24 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:30:24 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:30:24 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:25 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:25 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 1 for shard 6 (1 batches)
+2026-05-03 23:30:25 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:26 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:27 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:27 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:27 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:30:27 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:30:27 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:30:27 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:28 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed shard 5 (1 batches, 5.77s)
+2026-05-03 23:30:28 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 2 for shard 6 (1 batches)
+2026-05-03 23:30:28 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:28 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:29 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:29 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:29 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:30:29 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:30:29 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:30:29 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:29 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 3 for shard 6 (1 batches)
+2026-05-03 23:30:29 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:30 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:31 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:31 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:31 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:30:31 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:30:31 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:30:31 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:33 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:33 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed shard 5 (1 batches, 7.30s)
+2026-05-03 23:30:33 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed shard 6 (1 batches, 5.56s)
+2026-05-03 23:30:33 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed shard 6 (1 batches, 3.64s)
+2026-05-03 23:30:33 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 6 (1 batches)
+2026-05-03 23:30:33 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:33 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:35 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:35 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:35 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:30:35 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:30:35 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:30:35 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:36 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:36 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 1 for shard 6 (1 batches)
+2026-05-03 23:30:36 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:37 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:38 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:38 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:38 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:30:38 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:30:38 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:30:38 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:39 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed shard 6 (1 batches, 5.73s)
+2026-05-03 23:30:39 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 2 for shard 6 (1 batches)
+2026-05-03 23:30:39 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:39 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:41 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:41 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:41 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:30:41 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:30:41 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:30:41 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:41 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 3 for shard 6 (1 batches)
+2026-05-03 23:30:41 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:41 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:43 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:43 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:43 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:30:43 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:30:43 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:30:43 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:44 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:44 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed shard 6 (1 batches, 7.45s)
+2026-05-03 23:30:44 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed shard 6 (1 batches, 5.65s)
+2026-05-03 23:30:44 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed shard 6 (1 batches, 3.63s)
+2026-05-03 23:30:44 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 6 (1 batches)
+2026-05-03 23:30:44 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:45 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:30:46 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:46 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:46 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:30:46 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:30:46 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:30:46 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:48 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:48 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 1 for shard 7 (1 batches)
+2026-05-03 23:30:48 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:48 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:50 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:50 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:50 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:30:50 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:30:50 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=similarity
+2026-05-03 23:30:50 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:50 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed shard 6 (1 batches, 5.74s)
+2026-05-03 23:30:50 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 2 for shard 7 (1 batches)
+2026-05-03 23:30:50 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:50 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:52 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:52 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:52 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:30:52 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:30:52 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=mmr
+2026-05-03 23:30:52 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:52 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed shard 6 (1 batches, 4.07s)
+2026-05-03 23:30:52 | Controller | INFO | controller.py:1192 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed all 8 shards
+2026-05-03 23:30:52 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 completed shard 7 (1 batches, 2.36s)
+2026-05-03 23:30:52 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 7 (1 batches)
+2026-05-03 23:30:52 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:52 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:54 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:54 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:54 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:30:54 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:30:54 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-03 23:30:54 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:55 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:55 | Controller | INFO | controller.py:1192 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed all 8 shards
+2026-05-03 23:30:56 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 completed shard 7 (1 batches, 3.67s)
+2026-05-03 23:30:56 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 1 for shard 7 (1 batches)
+2026-05-03 23:30:56 | QueryProcessingActor-1 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:56 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-03 23:30:57 | QueryProcessingActor-1 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:30:57 | QueryProcessingActor-1 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:30:57 | QueryProcessingActor-1 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Deserializing FAISS index for this actor...
+2026-05-03 23:30:57 | QueryProcessingActor-1 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Created independent FAISS vector store for this actor
+2026-05-03 23:30:57 | QueryProcessingActor-1 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated retriever with search_type=mmr
+2026-05-03 23:30:58 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:30:59 | QueryProcessingActor-1 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-1] Recreated RAG spec with retrieval mode
+2026-05-03 23:30:59 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 2 for shard 7 (1 batches)
+2026-05-03 23:30:59 | QueryProcessingActor-2 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:30:59 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:31:01 | QueryProcessingActor-2 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:31:01 | QueryProcessingActor-2 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:31:01 | QueryProcessingActor-2 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Deserializing FAISS index for this actor...
+2026-05-03 23:31:01 | QueryProcessingActor-2 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Created independent FAISS vector store for this actor
+2026-05-03 23:31:01 | QueryProcessingActor-2 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated retriever with search_type=similarity
+2026-05-03 23:31:01 | QueryProcessingActor-2 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-2] Recreated RAG spec with retrieval mode
+2026-05-03 23:31:01 | Controller | INFO | controller.py:1192 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed all 8 shards
+2026-05-03 23:31:01 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 completed shard 7 (1 batches, 5.48s)
+2026-05-03 23:31:01 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 7 (1 batches)
+2026-05-03 23:31:01 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:31:01 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:31:04 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:31:04 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:31:04 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:31:04 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:31:04 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:31:04 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:31:04 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 3 for shard 7 (1 batches)
+2026-05-03 23:31:04 | QueryProcessingActor-3 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:31:04 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:31:06 | QueryProcessingActor-3 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:31:06 | QueryProcessingActor-3 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:31:06 | QueryProcessingActor-3 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Deserializing FAISS index for this actor...
+2026-05-03 23:31:06 | QueryProcessingActor-3 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Created independent FAISS vector store for this actor
+2026-05-03 23:31:06 | QueryProcessingActor-3 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated retriever with search_type=similarity
+2026-05-03 23:31:06 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:31:07 | QueryProcessingActor-3 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-3] Recreated RAG spec with retrieval mode
+2026-05-03 23:31:07 | Controller | INFO | controller.py:1192 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed all 8 shards
+2026-05-03 23:31:07 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 completed shard 7 (1 batches, 8.19s)
+2026-05-03 23:31:07 | Controller | INFO | controller.py:1192 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed all 8 shards
+2026-05-03 23:31:07 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 completed shard 7 (1 batches, 6.43s)
+2026-05-03 23:31:07 | Controller | INFO | controller.py:1192 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed all 8 shards
+2026-05-03 23:31:08 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 completed shard 7 (1 batches, 3.86s)
+2026-05-03 23:31:08 | Controller | INFO | controller.py:1422 | [project1-rapidfire-rag-contexteng:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 7 (1 batches)
+2026-05-03 23:31:08 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9924b857)
+2026-05-03 23:31:08 | sentence_transformers.base.model | INFO | model.py:973 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-05-03 23:31:10 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2026-05-03 23:31:10 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-03 23:31:10 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-03 23:31:10 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-03 23:31:10 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-03 23:31:10 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-03 23:31:11 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [project1-rapidfire-rag-contexteng:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-03 23:31:12 | Controller | INFO | controller.py:1192 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed all 8 shards
+2026-05-03 23:31:13 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 completed shard 7 (1 batches, 5.28s)
+2026-05-03 23:31:15 | Controller | INFO | controller.py:1192 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed all 8 shards
+2026-05-03 23:31:15 | Controller | INFO | controller.py:1299 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 completed shard 7 (1 batches, 4.17s)
+2026-05-03 23:31:15 | Controller | INFO | controller.py:1386 | [project1-rapidfire-rag-contexteng:Controller] All pipelines completed all shards!
+2026-05-03 23:31:15 | Controller | INFO | controller.py:695 | [project1-rapidfire-rag-contexteng:Controller] Computing final metrics for all pipelines...
+2026-05-03 23:31:15 | Experiment | INFO | metric_rfmetric_manager.py:190 | [project1-rapidfire-rag-contexteng:Experiment] Ending run: 49bccd6d68d442a18dbff76fc48e58c7, 1 in rf_mlflow
+2026-05-03 23:31:15 | Experiment | WARNING | metric_mlflow_manager.py:101 | [project1-rapidfire-rag-contexteng:Experiment] Run 49bccd6d68d442a18dbff76fc48e58c7 is not the active run, no local context to clear
+2026-05-03 23:31:15 | Controller | INFO | controller.py:853 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 1 (Pipeline 1) completed successfully
+2026-05-03 23:31:16 | Experiment | INFO | metric_rfmetric_manager.py:190 | [project1-rapidfire-rag-contexteng:Experiment] Ending run: 47ed969f97704db2875537ca0f2a54db, 2 in rf_mlflow
+2026-05-03 23:31:16 | Experiment | WARNING | metric_mlflow_manager.py:101 | [project1-rapidfire-rag-contexteng:Experiment] Run 47ed969f97704db2875537ca0f2a54db is not the active run, no local context to clear
+2026-05-03 23:31:16 | Controller | INFO | controller.py:853 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 2 (Pipeline 2) completed successfully
+2026-05-03 23:31:16 | Experiment | INFO | metric_rfmetric_manager.py:190 | [project1-rapidfire-rag-contexteng:Experiment] Ending run: bc2bc7173ec94402b8236b841d40fa73, 3 in rf_mlflow
+2026-05-03 23:31:16 | Experiment | WARNING | metric_mlflow_manager.py:101 | [project1-rapidfire-rag-contexteng:Experiment] Run bc2bc7173ec94402b8236b841d40fa73 is not the active run, no local context to clear
+2026-05-03 23:31:16 | Controller | INFO | controller.py:853 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 3 (Pipeline 3) completed successfully
+2026-05-03 23:31:16 | Experiment | INFO | metric_rfmetric_manager.py:190 | [project1-rapidfire-rag-contexteng:Experiment] Ending run: 9f9b101d24bb477da824b0009427a7eb, 4 in rf_mlflow
+2026-05-03 23:31:16 | Experiment | WARNING | metric_mlflow_manager.py:101 | [project1-rapidfire-rag-contexteng:Experiment] Run 9f9b101d24bb477da824b0009427a7eb is not the active run, no local context to clear
+2026-05-03 23:31:16 | Controller | INFO | controller.py:853 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 4 (Pipeline 4) completed successfully
+2026-05-03 23:31:16 | Experiment | INFO | metric_rfmetric_manager.py:190 | [project1-rapidfire-rag-contexteng:Experiment] Ending run: e54d51eb842c4bd6bb8bc5e46a944ce1, 5 in rf_mlflow
+2026-05-03 23:31:16 | Experiment | WARNING | metric_mlflow_manager.py:101 | [project1-rapidfire-rag-contexteng:Experiment] Run e54d51eb842c4bd6bb8bc5e46a944ce1 is not the active run, no local context to clear
+2026-05-03 23:31:16 | Controller | INFO | controller.py:853 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 5 (Pipeline 5) completed successfully
+2026-05-03 23:31:16 | Experiment | INFO | metric_rfmetric_manager.py:190 | [project1-rapidfire-rag-contexteng:Experiment] Ending run: fdd0e81cb1fe4e2582cf34fefac1b4ae, 6 in rf_mlflow
+2026-05-03 23:31:16 | Experiment | WARNING | metric_mlflow_manager.py:101 | [project1-rapidfire-rag-contexteng:Experiment] Run fdd0e81cb1fe4e2582cf34fefac1b4ae is not the active run, no local context to clear
+2026-05-03 23:31:16 | Controller | INFO | controller.py:853 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 6 (Pipeline 6) completed successfully
+2026-05-03 23:31:16 | Experiment | INFO | metric_rfmetric_manager.py:190 | [project1-rapidfire-rag-contexteng:Experiment] Ending run: a55655434e0244668553798d768800b7, 7 in rf_mlflow
+2026-05-03 23:31:16 | Experiment | WARNING | metric_mlflow_manager.py:101 | [project1-rapidfire-rag-contexteng:Experiment] Run a55655434e0244668553798d768800b7 is not the active run, no local context to clear
+2026-05-03 23:31:16 | Controller | INFO | controller.py:853 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 7 (Pipeline 7) completed successfully
+2026-05-03 23:31:17 | Experiment | INFO | metric_rfmetric_manager.py:190 | [project1-rapidfire-rag-contexteng:Experiment] Ending run: 87359ab3818e42f1a8fded2b98ec7669, 8 in rf_mlflow
+2026-05-03 23:31:17 | Experiment | WARNING | metric_mlflow_manager.py:101 | [project1-rapidfire-rag-contexteng:Experiment] Run 87359ab3818e42f1a8fded2b98ec7669 is not the active run, no local context to clear
+2026-05-03 23:31:17 | Controller | INFO | controller.py:853 | [project1-rapidfire-rag-contexteng:Controller] Pipeline 8 (Pipeline 8) completed successfully

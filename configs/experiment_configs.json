@@ -1,0 +1,59 @@
+[
+  {
+    "name": "bm25_lines54_overlap14_top5",
+    "chunk_lines": 54,
+    "chunk_overlap": 14,
+    "top_k": 5,
+    "candidate_pool": 36
+  },
+  {
+    "name": "bm25_lines42_overlap10_top5",
+    "chunk_lines": 42,
+    "chunk_overlap": 10,
+    "top_k": 5,
+    "candidate_pool": 40
+  },
+  {
+    "name": "bm25_lines66_overlap18_top5",
+    "chunk_lines": 66,
+    "chunk_overlap": 18,
+    "top_k": 5,
+    "candidate_pool": 36
+  },
+  {
+    "name": "bm25_lines80_overlap20_top5",
+    "chunk_lines": 80,
+    "chunk_overlap": 20,
+    "top_k": 5,
+    "candidate_pool": 44
+  },
+  {
+    "name": "bm25_lines54_overlap24_top5",
+    "chunk_lines": 54,
+    "chunk_overlap": 24,
+    "top_k": 5,
+    "candidate_pool": 48
+  },
+  {
+    "name": "bm25_lines54_overlap14_top4",
+    "chunk_lines": 54,
+    "chunk_overlap": 14,
+    "top_k": 4,
+    "candidate_pool": 36
+  },
+  {
+    "name": "bm25_lines36_overlap12_top5",
+    "chunk_lines": 36,
+    "chunk_overlap": 12,
+    "top_k": 5,
+    "candidate_pool": 50
+  },
+  {
+    "name": "bm25_lines96_overlap24_top5",
+    "chunk_lines": 96,
+    "chunk_overlap": 24,
+    "top_k": 5,
+    "candidate_pool": 52
+  }
+]
+
