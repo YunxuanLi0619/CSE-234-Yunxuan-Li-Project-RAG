@@ -3,7 +3,7 @@
 The primary path intentionally mirrors the TritonAI sample:
 
     client = openai.OpenAI(api_key=..., base_url="https://tritonai-api.ucsd.edu")
-    client.chat.completions.create(model="api-gpt-oss-120b", messages=[...])
+    client.chat.completions.create(model="api-llama-4-scout", messages=[...])
 
 If the `openai` package is unavailable, the code falls back to a standard-library
 HTTP request against the same chat-completions endpoint.
@@ -27,7 +27,7 @@ from .text_utils import split_sentences, tokenize
 
 @dataclass
 class LLMConfig:
-    model: str = "api-gpt-oss-120b"
+    model: str = "api-llama-4-scout"
     api_key: Optional[str] = None
     base_url: Optional[str] = None
     temperature: float = 0.0

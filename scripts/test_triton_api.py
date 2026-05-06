@@ -4,7 +4,7 @@
 Usage:
     export OPENAI_API_KEY="$(cat ~/api-key.txt)"
     export GENERATOR_BASE_URL="https://tritonai-api.ucsd.edu"
-    export GENERATOR_MODEL="api-gpt-oss-120b"
+    export GENERATOR_MODEL="api-llama-4-scout"
     python3 scripts/test_triton_api.py
 """
 
@@ -21,7 +21,7 @@ from src.llm_client import LLMConfig, call_openai_compatible, discover_api_key, 
 
 def main() -> int:
     config = LLMConfig(
-        model=get_config_value("GENERATOR_MODEL", "TRITONAI_MODEL", "OPENAI_MODEL") or "api-gpt-oss-120b",
+        model=get_config_value("GENERATOR_MODEL", "TRITONAI_MODEL", "OPENAI_MODEL") or "api-llama-4-scout",
         api_key=discover_api_key(),
         base_url=discover_base_url(),
         max_tokens=80,

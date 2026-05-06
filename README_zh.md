@@ -42,7 +42,7 @@ python3 main.py \
   --output logs/validation_output.json \
   --api-key "$OPENAI_API_KEY" \
   --base-url "https://tritonai-api.ucsd.edu" \
-  --model "api-gpt-oss-120b"
+  --model "api-llama-4-scout"
 ```
 
 也可以使用本地 `.env` 文件：
@@ -62,7 +62,7 @@ cp .env.example .env
 python3 scripts/test_triton_api.py
 ```
 
-如果 API 配置正确，它会调用 `api-gpt-oss-120b` 并打印模型回复。
+如果 API 配置正确，它会调用 `api-llama-4-scout` 并打印模型回复。
 
 ## 无 API 的 Smoke Test
 

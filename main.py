@@ -51,7 +51,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--chunk-lines", type=int, default=54, help="Line-window chunk size")
     parser.add_argument("--chunk-overlap", type=int, default=24, help="Line overlap between adjacent chunks")
     parser.add_argument("--context-token-budget", type=int, default=1700, help="Budget for serialized retrieved_context")
-    parser.add_argument("--model", default=None, help="Generator model; defaults to env GENERATOR_MODEL/TRITONAI_MODEL/OPENAI_MODEL/api-gpt-oss-120b")
+    parser.add_argument("--model", default=None, help="Generator model; defaults to env GENERATOR_MODEL/TRITONAI_MODEL/OPENAI_MODEL/api-llama-4-scout")
     parser.add_argument("--base-url", default=None, help="OpenAI-compatible base URL; TritonAI auto-detected when ~/api-key.txt exists")
     parser.add_argument("--api-key", default=None, help="API key; defaults to env or ~/api-key.txt")
     parser.add_argument("--temperature", type=float, default=0.0)
@@ -80,7 +80,7 @@ def main() -> int:
     if model is None:
         import os
 
-        model = get_config_value("GENERATOR_MODEL", "TRITONAI_MODEL", "OPENAI_MODEL") or "api-gpt-oss-120b"
+        model = get_config_value("GENERATOR_MODEL", "TRITONAI_MODEL", "OPENAI_MODEL") or "api-llama-4-scout"
 
     llm_config = LLMConfig(
         model=model,
