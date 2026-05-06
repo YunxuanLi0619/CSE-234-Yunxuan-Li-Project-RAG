@@ -170,6 +170,7 @@ RapidFire 结果会写到 `logs/`，实验设计和 trade-off 分析稿在：
 
 ```text
 reports/experiment_methodology_and_tradeoffs.md
+reports/rapidfire_config_comparison.md
 ```
 
 ## 代码设计

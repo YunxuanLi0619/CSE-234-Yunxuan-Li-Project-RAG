@@ -134,6 +134,7 @@ The report-ready tradeoff analysis is in:
 
 ```text
 reports/experiment_methodology_and_tradeoffs.md
+reports/rapidfire_config_comparison.md
 ```
 
 ## Design

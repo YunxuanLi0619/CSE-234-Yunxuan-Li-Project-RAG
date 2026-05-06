@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="730" viewBox="0 0 1180 730">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="32.0" y="38.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start" fill="#111827">RapidFire RAG Config Comparison</text>
+<text x="32.0" y="64.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">Metrics from logs/rapidfire_project1_metrics.csv; each run processed 24 validation samples.</text>
+<rect x="390" y="36" width="14" height="14" rx="2" fill="#2563eb"/>
+<text x="410.0" y="48.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Source F1@5</text>
+<rect x="540" y="36" width="14" height="14" rx="2" fill="#16a34a"/>
+<text x="560.0" y="48.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Precision@5</text>
+<rect x="690" y="36" width="14" height="14" rx="2" fill="#f97316"/>
+<text x="710.0" y="48.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Recall@5</text>
+<rect x="840" y="36" width="14" height="14" rx="2" fill="#7c3aed"/>
+<text x="860.0" y="48.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Ref token recall</text>
+<line x1="390.0" y1="82" x2="390.0" y2="654" stroke="#e5e7eb" stroke-width="1"/>
+<text x="390.0" y="672.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#111827">0.00</text>
+<line x1="545.0" y1="82" x2="545.0" y2="654" stroke="#e5e7eb" stroke-width="1"/>
+<text x="545.0" y="672.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#111827">0.25</text>
+<line x1="700.0" y1="82" x2="700.0" y2="654" stroke="#e5e7eb" stroke-width="1"/>
+<text x="700.0" y="672.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#111827">0.50</text>
+<line x1="855.0" y1="82" x2="855.0" y2="654" stroke="#e5e7eb" stroke-width="1"/>
+<text x="855.0" y="672.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#111827">0.75</text>
+<line x1="1010.0" y1="82" x2="1010.0" y2="654" stroke="#e5e7eb" stroke-width="1"/>
+<text x="1010.0" y="672.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#111827">1.00</text>
+<line x1="390" y1="654" x2="1010" y2="654" stroke="#9ca3af" stroke-width="1"/>
+<text x="32.0" y="92.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#111827">Run 1: MiniLM-L6, 256/32, similarity, none, concise</text>
+<text x="32.0" y="111.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#111827">samples=24, time=207.46 seconds</text>
+<rect x="390" y="78.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="78.0" width="313.4" height="9" rx="2" fill="#2563eb"/>
+<text x="710.4" y="86.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.506</text>
+<rect x="390" y="92.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="92.0" width="228.2" height="9" rx="2" fill="#16a34a"/>
+<text x="625.2" y="100.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.368</text>
+<rect x="390" y="106.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="106.0" width="555.4" height="9" rx="2" fill="#f97316"/>
+<text x="952.4" y="114.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.896</text>
+<rect x="390" y="120.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="120.0" width="184.0" height="9" rx="2" fill="#7c3aed"/>
+<text x="581.0" y="128.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.297</text>
+<rect x="24" y="140" width="1132" height="62" fill="#f9fafb"/>
+<text x="32.0" y="160.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#111827">Run 2: MiniLM-L6, 256/32, mmr, none, structured</text>
+<text x="32.0" y="179.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#111827">samples=24, time=183.45 seconds</text>
+<rect x="390" y="146.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="146.0" width="259.8" height="9" rx="2" fill="#2563eb"/>
+<text x="656.8" y="154.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.419</text>
+<rect x="390" y="160.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="160.0" width="170.5" height="9" rx="2" fill="#16a34a"/>
+<text x="567.5" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.275</text>
+<rect x="390" y="174.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="174.0" width="581.2" height="9" rx="2" fill="#f97316"/>
+<text x="978.2" y="182.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.938</text>
+<rect x="390" y="188.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="188.0" width="189.5" height="9" rx="2" fill="#7c3aed"/>
+<text x="586.5" y="196.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.306</text>
+<text x="32.0" y="228.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#111827">Run 3: MiniLM-L6, 512/64, similarity, cross-encoder, concise</text>
+<text x="32.0" y="247.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#111827">samples=24, time=181.28 seconds</text>
+<rect x="390" y="214.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="214.0" width="325.5" height="9" rx="2" fill="#2563eb"/>
+<text x="722.5" y="222.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.525</text>
+<rect x="390" y="228.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="228.0" width="244.1" height="9" rx="2" fill="#16a34a"/>
+<text x="641.1" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.394</text>
+<rect x="390" y="242.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="242.0" width="568.3" height="9" rx="2" fill="#f97316"/>
+<text x="965.3" y="250.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.917</text>
+<rect x="390" y="256.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="256.0" width="249.9" height="9" rx="2" fill="#7c3aed"/>
+<text x="646.9" y="264.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.403</text>
+<rect x="24" y="276" width="1132" height="62" fill="#f9fafb"/>
+<text x="32.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#111827">Run 4: MiniLM-L6, 512/64, mmr, cross-encoder, structured</text>
+<text x="32.0" y="315.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#111827">samples=24, time=178.02 seconds</text>
+<rect x="390" y="282.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="282.0" width="246.4" height="9" rx="2" fill="#2563eb"/>
+<text x="643.4" y="290.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.397</text>
+<rect x="390" y="296.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="296.0" width="161.9" height="9" rx="2" fill="#16a34a"/>
+<text x="558.9" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.261</text>
+<rect x="390" y="310.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="310.0" width="555.4" height="9" rx="2" fill="#f97316"/>
+<text x="952.4" y="318.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.896</text>
+<rect x="390" y="324.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="324.0" width="256.7" height="9" rx="2" fill="#7c3aed"/>
+<text x="653.7" y="332.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.414</text>
+<text x="32.0" y="364.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#111827">Run 5: BGE-small, 256/32, similarity, none, structured</text>
+<text x="32.0" y="383.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#111827">samples=24, time=174.83 seconds</text>
+<rect x="390" y="350.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="350.0" width="332.5" height="9" rx="2" fill="#2563eb"/>
+<text x="729.5" y="358.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.536</text>
+<rect x="390" y="364.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="364.0" width="235.1" height="9" rx="2" fill="#16a34a"/>
+<text x="632.1" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.379</text>
+<rect x="390" y="378.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="378.0" width="607.1" height="9" rx="2" fill="#f97316"/>
+<text x="1004.1" y="386.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.979</text>
+<rect x="390" y="392.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="392.0" width="223.4" height="9" rx="2" fill="#7c3aed"/>
+<text x="620.4" y="400.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.360</text>
+<rect x="24" y="412" width="1132" height="62" fill="#f9fafb"/>
+<text x="32.0" y="432.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#111827">Run 6: BGE-small, 384/64, mmr, none, concise</text>
+<text x="32.0" y="451.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#111827">samples=24, time=172.61 seconds</text>
+<rect x="390" y="418.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="418.0" width="236.8" height="9" rx="2" fill="#2563eb"/>
+<text x="633.8" y="426.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.382</text>
+<rect x="390" y="432.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="432.0" width="155.0" height="9" rx="2" fill="#16a34a"/>
+<text x="552.0" y="440.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.250</text>
+<rect x="390" y="446.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="446.0" width="542.5" height="9" rx="2" fill="#f97316"/>
+<text x="939.5" y="454.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.875</text>
+<rect x="390" y="460.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="460.0" width="213.1" height="9" rx="2" fill="#7c3aed"/>
+<text x="610.1" y="468.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.344</text>
+<text x="32.0" y="500.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#111827">Run 7: BGE-small, 512/64, similarity, cross-encoder, structured</text>
+<text x="32.0" y="519.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#111827">samples=24, time=170.85 seconds</text>
+<rect x="390" y="486.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="486.0" width="326.4" height="9" rx="2" fill="#2563eb"/>
+<text x="723.4" y="494.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.526</text>
+<rect x="390" y="500.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="500.0" width="228.2" height="9" rx="2" fill="#16a34a"/>
+<text x="625.2" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.368</text>
+<rect x="390" y="514.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="514.0" width="607.1" height="9" rx="2" fill="#f97316"/>
+<text x="1004.1" y="522.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.979</text>
+<rect x="390" y="528.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="528.0" width="296.0" height="9" rx="2" fill="#7c3aed"/>
+<text x="693.0" y="536.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.477</text>
+<rect x="24" y="548" width="1132" height="62" fill="#f9fafb"/>
+<text x="32.0" y="568.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="start" fill="#111827">Run 8: BGE-small, 512/96, mmr, cross-encoder, concise</text>
+<text x="32.0" y="587.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#111827">samples=24, time=167.25 seconds</text>
+<rect x="390" y="554.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="554.0" width="242.8" height="9" rx="2" fill="#2563eb"/>
+<text x="639.8" y="562.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.392</text>
+<rect x="390" y="568.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="568.0" width="157.2" height="9" rx="2" fill="#16a34a"/>
+<text x="554.2" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.253</text>
+<rect x="390" y="582.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="582.0" width="568.3" height="9" rx="2" fill="#f97316"/>
+<text x="965.3" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.917</text>
+<rect x="390" y="596.0" width="620" height="9" rx="2" fill="#eef2f7"/>
+<rect x="390" y="596.0" width="240.6" height="9" rx="2" fill="#7c3aed"/>
+<text x="637.6" y="604.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#111827">0.388</text>
+<text x="700.0" y="698.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#111827">Metric value</text>
+</svg>
