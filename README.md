@@ -29,7 +29,7 @@ Useful environment variables:
 ```bash
 export OPENAI_API_KEY="$(cat ~/api-key.txt)"
 export GENERATOR_BASE_URL="https://tritonai-api.ucsd.edu"
-export GENERATOR_MODEL="api-gpt-oss-120b"
+export GENERATOR_MODEL="api-llama-4-scout"
 ```
 
 You can also pass `--api-key`, `--base-url`, and `--model` directly.
