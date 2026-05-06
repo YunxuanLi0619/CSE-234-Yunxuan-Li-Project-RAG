@@ -85,7 +85,8 @@ Team 40 submission-ready artifacts are included in this folder:
 
 - `golden_qa_pairs.json`: 22 hand-labeled golden Q&A pairs.
 - `validation_output.json`: output JSON from the final pipeline on the released validation set.
-- `project_report.pdf`: final project report with the five required sections.
+- `project_report.pdf`: final 4-page LaTeX project report with the five required sections.
+- `reports/project_report.tex`: LaTeX source for the final report.
 - `logs/`: retrieval, generation judge, and RapidFire AI experiment logs/metrics.
 
 Regenerate the convenience artifacts after a new run with:

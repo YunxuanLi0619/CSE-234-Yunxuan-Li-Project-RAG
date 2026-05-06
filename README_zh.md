@@ -31,7 +31,7 @@ python3 main.py --input ../validation-set-golden-qa-pairs.json --output logs/val
 ```bash
 export OPENAI_API_KEY="$(cat ~/api-key.txt)"
 export GENERATOR_BASE_URL="https://tritonai-api.ucsd.edu"
-export GENERATOR_MODEL="api-gpt-oss-120b"
+export GENERATOR_MODEL="api-llama-4-scout"
 ```
 
 也可以直接传命令行参数：
@@ -208,4 +208,5 @@ grep -n "Generation API was unavailable" logs/final_validation_output.json
 - `golden_qa_pairs.json` 至少 20 条。
 - `logs/` 中包含 RapidFire AI 实验日志和 metrics。
 - `logs/final_validation_output.json` 是最终 pipeline 在 released validation set 上生成的输出。
-- project report PDF 已经写好。
+- project report PDF 已经写好，根目录 `project_report.pdf` 是最终 4 页 LaTeX 版本。
+- LaTeX 源文件在 `reports/project_report.tex`。
