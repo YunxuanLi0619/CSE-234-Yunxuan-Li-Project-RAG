@@ -90,7 +90,7 @@ python3 ../Metrics/evaluate_retrieval.py \
 Team 40 submission-ready artifacts are included in this folder:
 
 - `output.json`: exact released-set output filename required by the latest submission guideline.
-- `your_golden_qa.json`: exact golden-data filename required by the latest submission guideline.
+- `team40_golden_qa.json`: exact golden-data filename required by the latest submission guideline.
 - `report.pdf`: exact report filename required by the latest submission guideline.
 - `reports/project_report.tex`: LaTeX source for the final report.
 - `logs/`: retrieval, generation judge, and RapidFire AI experiment logs/metrics.
