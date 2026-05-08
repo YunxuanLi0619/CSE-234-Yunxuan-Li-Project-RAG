@@ -2,7 +2,9 @@
 """Final Project 1 CLI.
 
 Usage:
-    python3 main.py --input input.json --output output.json
+    python3 main.py --input input.json --output output.json \
+        --corpus-dir sourcedocs --apikey-txt ~/api-key.txt \
+        --generation-model api-llama-4-scout
 
 The input JSON may be the released validation set with extra keys or the hidden
 test-set schema containing only question_id and question. The output always
@@ -45,15 +47,16 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Line-aware RAG QA over RapidFire AI docs")
     parser.add_argument("--input", required=True, help="Input JSON test set")
     parser.add_argument("--output", required=True, help="Output JSON path")
-    parser.add_argument("--docs", default=None, help="Path to sourcedocs directory; auto-detected by default")
+    parser.add_argument("--docs", "--corpus-dir", dest="docs", default=None, help="Path to sourcedocs directory; auto-detected by default")
     parser.add_argument("--top-k", type=int, default=5, help="Maximum retrieved chunks/sources per question")
-    parser.add_argument("--candidate-pool", type=int, default=36, help="BM25 candidates considered before diversity filtering")
+    parser.add_argument("--candidate-pool", type=int, default=48, help="BM25 candidates considered before diversity filtering")
     parser.add_argument("--chunk-lines", type=int, default=54, help="Line-window chunk size")
     parser.add_argument("--chunk-overlap", type=int, default=24, help="Line overlap between adjacent chunks")
     parser.add_argument("--context-token-budget", type=int, default=1700, help="Budget for serialized retrieved_context")
-    parser.add_argument("--model", default=None, help="Generator model; defaults to env GENERATOR_MODEL/TRITONAI_MODEL/OPENAI_MODEL/api-llama-4-scout")
+    parser.add_argument("--model", "--generation-model", dest="model", default=None, help="Generator model; defaults to env GENERATOR_MODEL/TRITONAI_MODEL/OPENAI_MODEL/api-llama-4-scout")
     parser.add_argument("--base-url", default=None, help="OpenAI-compatible base URL; TritonAI auto-detected when ~/api-key.txt exists")
     parser.add_argument("--api-key", default=None, help="API key; defaults to env or ~/api-key.txt")
+    parser.add_argument("--apikey-txt", default=None, help="Path to TritonAI gateway API key text file")
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--max-output-tokens", type=int, default=420)
     parser.add_argument("--request-timeout", type=int, default=90, help="Per-request API timeout in seconds")
@@ -62,6 +65,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--no-llm", action="store_true", help="Disable API calls and use extractive fallback")
     parser.add_argument("--quiet", action="store_true")
     return parser.parse_args()
+
+
+def read_api_key_file(path: str | None) -> str | None:
+    if not path:
+        return None
+    text = Path(path).expanduser().read_text(encoding="utf-8", errors="ignore").strip()
+    return text or None
 
 
 def main() -> int:
@@ -82,10 +92,15 @@ def main() -> int:
 
         model = get_config_value("GENERATOR_MODEL", "TRITONAI_MODEL", "OPENAI_MODEL") or "api-llama-4-scout"
 
+    explicit_api_key = args.api_key or read_api_key_file(args.apikey_txt)
+    base_url = discover_base_url(args.base_url)
+    if base_url is None and args.apikey_txt:
+        base_url = "https://tritonai-api.ucsd.edu"
+
     llm_config = LLMConfig(
         model=model,
-        api_key=discover_api_key(args.api_key),
-        base_url=discover_base_url(args.base_url),
+        api_key=discover_api_key(explicit_api_key),
+        base_url=base_url,
         temperature=args.temperature,
         max_tokens=args.max_output_tokens,
         timeout=args.request_timeout,

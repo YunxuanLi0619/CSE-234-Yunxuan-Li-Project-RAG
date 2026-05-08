@@ -1,0 +1,180 @@
+[
+  {
+    "question_id": 1,
+    "question": "What types of knobs, beyond ordinary hyperparameters, can RapidFire AI treat as configurable choices?",
+    "reference_answer": "RapidFire AI generalizes config knobs beyond ordinary hyperparameters to include base model architectures, prompt schemes, LoRA adapters, optimizers for training, and RAG-related choices such as data chunking, embedding, retrieval, reranking, generation, and prompt schemes.",
+    "source_evidence": [
+      {"file": "configs.rst", "lines": [9, 13]}
+    ]
+  },
+  {
+    "question_id": 2,
+    "question": "What are the required and optional arguments for RFRandomSearch?",
+    "reference_answer": "RFRandomSearch takes a configs dictionary, an optional trainer_type, a required num_runs value giving the number of sampled knob combinations, and an optional seed that defaults to 42.",
+    "source_evidence": [
+      {"file": "configs.rst", "lines": [75, 87]}
+    ]
+  },
+  {
+    "question_id": 3,
+    "question": "When does RFLangChainRagSpec create both document preprocessing workers and query processing workers?",
+    "reference_answer": "It creates both stages when preprocessing is requested: provide a document_loader, optional text_splitter, embedding_cfg, and optional vector_store_cfg. The preprocessing workers load, split, embed, and store documents, while query processing handles retrieval and generation.",
+    "source_evidence": [
+      {"file": "ragspecs.rst", "lines": [33, 37]}
+    ]
+  },
+  {
+    "question_id": 4,
+    "question": "For Pinecone vector stores in RapidFire AI, what extra information is needed in Create mode versus Read or Update mode?",
+    "reference_answer": "For Pinecone Create mode, a spec is required and metric, vector_type, tags, timeout, and deletion_protection are optional. For Read or Update mode, index_namespace is required and must point to a pre-existing index and namespace. In all modes, a Pinecone API key and embedding configuration are required either directly or through the environment/top-level config.",
+    "source_evidence": [
+      {"file": "ragspecs.rst", "lines": [71, 88]}
+    ]
+  },
+  {
+    "question_id": 5,
+    "question": "What is the purpose of the search_cfg argument in RFLangChainRagSpec?",
+    "reference_answer": "search_cfg controls the search algorithm and its retrieval parameters. It specifies one of similarity, similarity_score_threshold, or mmr, and can include parameters such as k, filter, score_threshold, fetch_k, and lambda_mult depending on the selected search type.",
+    "source_evidence": [
+      {"file": "ragspecs.rst", "lines": [103, 116]}
+    ]
+  },
+  {
+    "question_id": 6,
+    "question": "How can a custom document_template change retrieved context serialization?",
+    "reference_answer": "A custom document_template is a function that accepts a LangChain Document and returns a formatted string. It lets users control which metadata fields appear and how content is formatted, for example including only a source field or a title with page content.",
+    "source_evidence": [
+      {"file": "ragspecs.rst", "lines": [124, 148]}
+    ]
+  },
+  {
+    "question_id": 7,
+    "question": "What should you do before running another Experiment function after interrupting run_fit or run_evals?",
+    "reference_answer": "Only one function in an Experiment can run at a time. If a long-running function such as run_fit or run_evals is interrupted, you should wait up to two minutes for Python threads to be cleaned up before running another function.",
+    "source_evidence": [
+      {"file": "experiment.rst", "lines": [16, 19]}
+    ]
+  },
+  {
+    "question_id": 8,
+    "question": "What does Experiment.run_evals return?",
+    "reference_answer": "run_evals returns a dictionary keyed by run/config ID. Each value is a two-tuple containing dictionaries for aggregated metrics and cumulative metrics.",
+    "source_evidence": [
+      {"file": "experiment.rst", "lines": [140, 158]},
+      {"file": "experiment.rst", "lines": [191, 193]}
+    ]
+  },
+  {
+    "question_id": 9,
+    "question": "What does run_evals display while an experiment is running?",
+    "reference_answer": "run_evals auto-generates metrics and shows them in an auto-updated in-notebook table. It also displays an Interactive Control Ops panel below the cell where run_evals is invoked.",
+    "source_evidence": [
+      {"file": "experiment.rst", "lines": [168, 176]}
+    ]
+  },
+  {
+    "question_id": 10,
+    "question": "What information is returned by Experiment.get_results?",
+    "reference_answer": "get_results returns all metrics, including loss, eval loss, and user-defined eval metrics, for all steps and all runs across run_fit invocations. The DataFrame includes run ID, step number, loss, and one column per metric shown on the dashboard.",
+    "source_evidence": [
+      {"file": "experiment.rst", "lines": [244, 253]}
+    ]
+  },
+  {
+    "question_id": 11,
+    "question": "Why are Interactive Control Operations executed at chunk boundaries?",
+    "reference_answer": "IC Ops are queued and executed at chunk boundaries to avoid potentially non-deterministic or inconsistent behavior during concurrent run execution. Different runs may reach their chunk boundaries at different times.",
+    "source_evidence": [
+      {"file": "icops.rst", "lines": [75, 83]}
+    ]
+  },
+  {
+    "question_id": 12,
+    "question": "What happens when the Stop IC Op is applied to a run?",
+    "reference_answer": "Stop earmarks a run to stop at the end of its current chunk. The run remains alive but will not use GPU resources from the next chunk, and its current minibatch-level plots continue advancing until the current chunk finishes.",
+    "source_evidence": [
+      {"file": "icops.rst", "lines": [95, 101]}
+    ]
+  },
+  {
+    "question_id": 13,
+    "question": "What does Clone-Modify allow, and when is warm-starting a clone allowed?",
+    "reference_answer": "Clone-Modify lets users add clones of an ongoing, stopped, or resumed parent run and edit the parent's knob config before launching the clone. Warm-starting from the parent's weights is allowed only when the clone has an identical neural architecture, including LoRA adapters.",
+    "source_evidence": [
+      {"file": "icops.rst", "lines": [123, 140]}
+    ]
+  },
+  {
+    "question_id": 14,
+    "question": "Do you need GPUs to run RapidFire AI RAG experiments that only use OpenAI APIs?",
+    "reference_answer": "No. If the workflow uses only OpenAI APIs and no self-hosted models for embedding or generation, GPUs are not required. A valid OpenAI API key must be provided as shown in the tutorial notebooks.",
+    "source_evidence": [
+      {"file": "walkthroughrag.rst", "lines": [24, 31]}
+    ]
+  },
+  {
+    "question_id": 15,
+    "question": "Is starting the RapidFire AI server required for run_evals in RAG/context engineering?",
+    "reference_answer": "Starting the server is optional for RAG/context engineering experiments with run_evals. It is only needed if the user wants results on the ML metrics dashboard; results and IC Ops can also be shown in the notebook.",
+    "source_evidence": [
+      {"file": "walkthroughrag.rst", "lines": [78, 103]}
+    ]
+  },
+  {
+    "question_id": 16,
+    "question": "Which ports does the walkthrough recommend forwarding when using RapidFire AI on a remote machine?",
+    "reference_answer": "The walkthrough recommends forwarding ports 8850, 8851, and 8853 from the remote machine to the client machine.",
+    "source_evidence": [
+      {"file": "walkthroughrag.rst", "lines": [107, 121]}
+    ]
+  },
+  {
+    "question_id": 17,
+    "question": "What major steps are listed for running the RAG tutorial notebook?",
+    "reference_answer": "The notebook steps include imports, loading datasets, creating a named RF experiment, defining the RF RAG spec, preprocessing and postprocessing functions, eval metric functions, the RF generator spec, the multi-config knob dictionary and config group, and then launching multi-config evals.",
+    "source_evidence": [
+      {"file": "walkthroughrag.rst", "lines": [200, 221]}
+    ]
+  },
+  {
+    "question_id": 18,
+    "question": "How should users stop RapidFire AI services after finishing experiments?",
+    "reference_answer": "Users should gracefully stop RapidFire AI either by pressing Ctrl+C in the terminal where rapidfireai start is running and waiting for cleanup, or by running rapidfireai stop in another terminal. Force-killing the server can lose artifacts or metadata.",
+    "source_evidence": [
+      {"file": "walkthroughrag.rst", "lines": [264, 289]}
+    ]
+  },
+  {
+    "question_id": 19,
+    "question": "What generator backends does RapidFire AI support as described in the generator config docs?",
+    "reference_answer": "RapidFire AI supports self-hosted open LLMs and closed-model LLM APIs as generators. It wraps vLLM configs for self-hosted models and OpenAI API configs for closed model APIs, with plans to expand to more generator plugins.",
+    "source_evidence": [
+      {"file": "generators.rst", "lines": [4, 7]}
+    ]
+  },
+  {
+    "question_id": 20,
+    "question": "Which OpenAI chat completion parameters does RFOpenAIAPIModelConfig recommend listing?",
+    "reference_answer": "RFOpenAIAPIModelConfig recommends listing model, temperature, max_completion_tokens, reasoning_effort, and top_p as model_config parameters, while client_config should include at least api_key and often max_retries or timeout.",
+    "source_evidence": [
+      {"file": "generators.rst", "lines": [91, 108]}
+    ]
+  },
+  {
+    "question_id": 21,
+    "question": "Which LoRA knobs are usually important to experiment with?",
+    "reference_answer": "Important LoRA knobs include rank r, lora_alpha, target_modules, lora_dropout, and init_lora_weights. The docs note that rank is especially critical and that query/value modules are a common starting point.",
+    "source_evidence": [
+      {"file": "models.rst", "lines": [47, 68]}
+    ]
+  },
+  {
+    "question_id": 22,
+    "question": "What does RFModelConfig unify in the RapidFire AI API?",
+    "reference_answer": "RFModelConfig unifies model loading, training configurations, and LoRA settings into one class. It supports variations of LoRA adapters, training arguments for SFT, DPO, and GRPO, formatting and metrics functions, and generation-specific settings.",
+    "source_evidence": [
+      {"file": "models.rst", "lines": [71, 83]}
+    ]
+  }
+]
+

@@ -7,7 +7,12 @@
 在 `project1_solution` 目录下运行：
 
 ```bash
-python3 main.py --input ../validation-set-golden-qa-pairs.json --output logs/validation_output.json
+python3 main.py \
+  --input ../validation-set-golden-qa-pairs.json \
+  --output logs/validation_output.json \
+  --corpus-dir sourcedocs \
+  --apikey-txt ~/api-key.txt \
+  --generation-model api-llama-4-scout
 ```
 
 `main.py` 也可以处理 hidden test 的输入格式，因为它只依赖每条样本里的：
@@ -44,6 +49,9 @@ python3 main.py \
   --base-url "https://tritonai-api.ucsd.edu" \
   --model "api-llama-4-scout"
 ```
+
+根据最新 Gradescope guideline，`main.py` 已经接受这五个必需参数：
+`--input`、`--output`、`--corpus-dir`、`--apikey-txt`、`--generation-model`。
 
 也可以使用本地 `.env` 文件：
 
@@ -207,6 +215,16 @@ grep -n "Generation API was unavailable" logs/final_validation_output.json
 - `README.md` 存在。
 - `golden_qa_pairs.json` 至少 20 条。
 - `logs/` 中包含 RapidFire AI 实验日志和 metrics。
-- `logs/final_validation_output.json` 是最终 pipeline 在 released validation set 上生成的输出。
+- `output.json` 是最新提交规范要求的 released-set 输出文件名。
+- `your_golden_qa.json` 是最新提交规范要求的 golden Q&A 文件名。
+- `report.pdf` 是最新提交规范要求的 report 文件名。
 - project report PDF 已经写好，根目录 `project_report.pdf` 是最终 4 页 LaTeX 版本。
 - LaTeX 源文件在 `reports/project_report.tex`。
+
+按最新 Gradescope 规范生成提交包：
+
+```bash
+python3 scripts/export_submission_artifacts.py --team-id 40
+```
+
+这会生成 `team_40.zip`，外层 zip 里只有一个内层 archive：`repo.zip`。

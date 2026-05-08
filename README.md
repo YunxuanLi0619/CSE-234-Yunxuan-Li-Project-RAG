@@ -7,7 +7,12 @@ This folder contains a complete, dependency-light implementation of the required
 Run from this folder:
 
 ```bash
-python3 main.py --input ../validation-set-golden-qa-pairs.json --output logs/validation_output.json
+python3 main.py \
+  --input ../validation-set-golden-qa-pairs.json \
+  --output logs/validation_output.json \
+  --corpus-dir sourcedocs \
+  --apikey-txt ~/api-key.txt \
+  --generation-model api-llama-4-scout
 ```
 
 The script also accepts the hidden-test schema because it only requires `question_id` and `question`.
@@ -32,7 +37,8 @@ export GENERATOR_BASE_URL="https://tritonai-api.ucsd.edu"
 export GENERATOR_MODEL="api-llama-4-scout"
 ```
 
-You can also pass `--api-key`, `--base-url`, and `--model` directly.
+You can also pass `--api-key`, `--base-url`, and `--model` directly. For the latest Gradescope guideline,
+`main.py` accepts all required flags: `--input`, `--output`, `--corpus-dir`, `--apikey-txt`, and `--generation-model`.
 
 Or create a local `.env` file from `.env.example`:
 
@@ -84,7 +90,9 @@ python3 ../Metrics/evaluate_retrieval.py \
 Team 40 submission-ready artifacts are included in this folder:
 
 - `golden_qa_pairs.json`: 22 hand-labeled golden Q&A pairs.
-- `validation_output.json`: output JSON from the final pipeline on the released validation set.
+- `output.json`: exact released-set output filename required by the latest submission guideline.
+- `your_golden_qa.json`: exact golden-data filename required by the latest submission guideline.
+- `report.pdf`: exact report filename required by the latest submission guideline.
 - `project_report.pdf`: final 4-page LaTeX project report with the five required sections.
 - `reports/project_report.tex`: LaTeX source for the final report.
 - `logs/`: retrieval, generation judge, and RapidFire AI experiment logs/metrics.
@@ -92,8 +100,10 @@ Team 40 submission-ready artifacts are included in this folder:
 Regenerate the convenience artifacts after a new run with:
 
 ```bash
-python3 scripts/export_submission_artifacts.py
+python3 scripts/export_submission_artifacts.py --team-id 40
 ```
+
+This builds the Gradescope archive `team_40.zip` with exactly one nested archive, `repo.zip`.
 
 ## Local Config Sweep
 
