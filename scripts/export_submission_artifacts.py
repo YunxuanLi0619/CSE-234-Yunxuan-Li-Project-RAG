@@ -90,15 +90,15 @@ def export_rapidfire_csvs() -> None:
 
 
 def copy_required_artifacts() -> None:
-    copies = [
-        (LOGS / "validation_output.json", ROOT / "output.json"),
-        (ROOT / "project_report.pdf", ROOT / "report.pdf"),
-        (ROOT / "golden_qa_pairs.json", ROOT / "your_golden_qa.json"),
-    ]
+    copies = [(LOGS / "validation_output.json", ROOT / "output.json")]
     for src, dst in copies:
         if not src.exists():
             raise FileNotFoundError(f"Required artifact missing: {src}")
         shutil.copy2(src, dst)
+
+    for required in (ROOT / "report.pdf", ROOT / "your_golden_qa.json"):
+        if not required.exists():
+            raise FileNotFoundError(f"Required artifact missing: {required}")
 
 
 def should_skip_repo_path(path: Path) -> bool:

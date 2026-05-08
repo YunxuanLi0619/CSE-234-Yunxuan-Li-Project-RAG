@@ -89,11 +89,9 @@ python3 ../Metrics/evaluate_retrieval.py \
 
 Team 40 submission-ready artifacts are included in this folder:
 
-- `golden_qa_pairs.json`: 22 hand-labeled golden Q&A pairs.
 - `output.json`: exact released-set output filename required by the latest submission guideline.
 - `your_golden_qa.json`: exact golden-data filename required by the latest submission guideline.
 - `report.pdf`: exact report filename required by the latest submission guideline.
-- `project_report.pdf`: final 4-page LaTeX project report with the five required sections.
 - `reports/project_report.tex`: LaTeX source for the final report.
 - `logs/`: retrieval, generation judge, and RapidFire AI experiment logs/metrics.
 
@@ -135,22 +133,17 @@ On DataHub, after `rapidfireai init --evals` and `rapidfireai start`, run:
 ```bash
 python3 scripts/run_rapidfire_experiments.py \
   --validation ../validation-set-golden-qa-pairs.json \
+  --corpus-dir ../sourcedocs \
   --validation-limit 24 \
   --num-shards 4 \
   --num-actors 4
 ```
 
 Remove `--validation-limit 24` for the final full validation run. This writes RapidFire artifacts under `logs/`.
-The report-ready tradeoff analysis is in:
-
-```text
-reports/experiment_methodology_and_tradeoffs.md
-reports/rapidfire_config_comparison.md
-```
 
 ## Design
 
-- The corpus loader reads `../sourcedocs/*.rst`.
+- The autograder passes the corpus path via `--corpus-dir`; the repository intentionally does not track the large released corpus snapshot.
 - Chunks are overlapping line windows, preserving exact source line spans.
 - Retrieval uses BM25 with boosts for API names, code identifiers, headings, phrases, and file names.
 - Context serialization includes source file and line labels and stays under the configured budget.

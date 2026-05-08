@@ -1,6 +1,6 @@
 # CSE/DSC 234 Project 1 RAG 方案说明
 
-这个文件夹包含本项目最终 pipeline 的实现代码。核心目标是：给定一个问题 JSON 文件，自动检索 `sourcedocs/` 文档，生成答案，并输出项目要求的 JSON 格式。
+这个文件夹包含本项目最终 pipeline 的实现代码。核心目标是：给定一个问题 JSON 文件，自动检索 `--corpus-dir` 指向的文档，生成答案，并输出项目要求的 JSON 格式。
 
 ## 最终运行命令
 
@@ -168,26 +168,22 @@ rapidfireai start
 
 python3 scripts/run_rapidfire_experiments.py \
   --validation ../validation-set-golden-qa-pairs.json \
+  --corpus-dir ../sourcedocs \
   --validation-limit 24 \
   --num-shards 4 \
   --num-actors 4
 ```
 
 `--validation-limit 24` 用于控制 API 成本，最终 report 前可以去掉该参数跑完整 released validation set。
-RapidFire 结果会写到 `logs/`，实验设计和 trade-off 分析稿在：
-
-```text
-reports/experiment_methodology_and_tradeoffs.md
-reports/rapidfire_config_comparison.md
-```
+RapidFire 结果会写到 `logs/`。
 
 ## 代码设计
 
-- `sourcedocs/` 是知识库。
+- `--corpus-dir` 指向外部知识库；按照最新提交规范，仓库不再跟踪大体积 released corpus snapshot。
 - `main.py` 是最终提交要求的 CLI 入口。
 - `src/rag.py` 负责 line-aware chunking、BM25 检索、context 拼接和 source line span 输出。
 - `src/llm_client.py` 负责调用 TritonAI/OpenAI-compatible API。
-- `golden_qa_pairs.json` 是我们自己创建的 golden Q&A 数据。
+- `your_golden_qa.json` 是我们自己创建的 golden Q&A 数据。
 - `configs/experiment_configs.json` 包含至少 8 个实验配置。
 
 ## 正式提交前检查
@@ -213,12 +209,12 @@ grep -n "Generation API was unavailable" logs/final_validation_output.json
 
 - `main.py` 可以从 repo 根目录直接运行。
 - `README.md` 存在。
-- `golden_qa_pairs.json` 至少 20 条。
+- `your_golden_qa.json` 至少 20 条。
 - `logs/` 中包含 RapidFire AI 实验日志和 metrics。
 - `output.json` 是最新提交规范要求的 released-set 输出文件名。
 - `your_golden_qa.json` 是最新提交规范要求的 golden Q&A 文件名。
 - `report.pdf` 是最新提交规范要求的 report 文件名。
-- project report PDF 已经写好，根目录 `project_report.pdf` 是最终 4 页 LaTeX 版本。
+- project report PDF 已经写好，根目录 `report.pdf` 是最终 4 页 LaTeX 版本。
 - LaTeX 源文件在 `reports/project_report.tex`。
 
 按最新 Gradescope 规范生成提交包：

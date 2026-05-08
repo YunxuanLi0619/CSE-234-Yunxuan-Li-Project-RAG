@@ -263,7 +263,7 @@ def document_template(doc: Any) -> str:
     return f"[Source: {source}]\n{doc.page_content}"
 
 
-def make_rag(cfg: Dict[str, Any], deps: Dict[str, Any], *, include_reranker: bool) -> Any:
+def make_rag(cfg: Dict[str, Any], deps: Dict[str, Any], *, include_reranker: bool, docs_dir: Path) -> Any:
     RFLangChainRagSpec = deps["RFLangChainRagSpec"]
     DirectoryLoader = deps["DirectoryLoader"]
     TextLoader = deps["TextLoader"]
@@ -300,7 +300,7 @@ def make_rag(cfg: Dict[str, Any], deps: Dict[str, Any], *, include_reranker: boo
 
     return RFLangChainRagSpec(
         document_loader=DirectoryLoader(
-            path=str(ROOT / "sourcedocs"),
+            path=str(docs_dir),
             glob="*.rst",
             loader_cls=TextLoader,
             loader_kwargs={"encoding": "utf-8"},
@@ -330,11 +330,12 @@ def make_config(
     api_key: str,
     base_url: str,
     include_reranker: bool,
+    docs_dir: Path,
     rpm_limit: int,
     tpm_limit: int,
 ) -> Dict[str, Any]:
     RFOpenAIAPIModelConfig = deps["RFOpenAIAPIModelConfig"]
-    rag = make_rag(cfg, deps, include_reranker=include_reranker)
+    rag = make_rag(cfg, deps, include_reranker=include_reranker, docs_dir=docs_dir)
     preprocess_fn: Callable[[Dict[str, list], Any, Any], Dict[str, list]]
     preprocess_fn = preprocess_structured if cfg.get("prompt_style") == "structured" else preprocess_concise
     generator = RFOpenAIAPIModelConfig(
@@ -421,6 +422,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="RapidFire AI multi-config RAG experiments for Project 1")
     parser.add_argument("--validation", default=str(PROJECT_ROOT / "validation-set-golden-qa-pairs.json"))
     parser.add_argument("--configs", default=str(ROOT / "configs" / "rapidfire_experiment_configs.json"))
+    parser.add_argument("--corpus-dir", "--docs", dest="docs", default=str(PROJECT_ROOT / "sourcedocs"))
     parser.add_argument("--experiment-name", default="project1-rapidfire-rag-contexteng")
     parser.add_argument("--experiment-path", default=str(ROOT / "experiments" / "rapidfire_project1"))
     parser.add_argument("--validation-limit", type=int, default=24, help="Use a smaller subset while iterating to control API cost")
@@ -466,6 +468,7 @@ def main() -> int:
             api_key=api_key,
             base_url=base_url,
             include_reranker=not args.skip_rerankers,
+            docs_dir=Path(args.docs),
             rpm_limit=args.rpm_limit,
             tpm_limit=args.tpm_limit,
         )
